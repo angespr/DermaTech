@@ -4,16 +4,8 @@
     <title>
         Questionaire
     </title>
+    <link rel="stylesheet" href="headerinfo.css">
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans
-        }
-
         * {
             box-sizing: border-box;
         }
@@ -69,11 +61,24 @@
 </head>
 
 <body>
+    <div class="banner">
+        <div class="navbar">
+                <img src="logo.png" class="logo">
+                <ul> 
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="questionnaire.html">New Survey</a></li>
+                    <li><a href="about.html">Our Mission</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+        </div>
+        
     <div class="container">
         <form>
-            <h1>Questionaire</h1>
-            <p>Please fill take some time to fill out this form</p>
+            <h1>New Survey Questionaire</h1>
+            <h2>Please take some time to fill out this form</h2>
+            <br>
             <hr />
+            <br>
             <label>What kind of symptoms are you experiencing?</label>
             <br />
             <input type="questions 1: " placeholder=" " />
@@ -86,11 +91,9 @@
             <br />
             <label>Upload a clear image of the designated area</label>
             <br />
-            <button class="uploadbtn">Upload Image</button>
+            <button class="button"><span></span>Upload Image</button>
             <br />
-            <br />
-            <button class="submitrbtn">Submit</button>
-
+            <button class="button"><span></span>Submit</button>
 
         </form>
     </div>
