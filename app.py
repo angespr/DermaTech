@@ -37,6 +37,10 @@ def load_user(user_id):
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 @app.route("/signup", methods=['POST', 'GET'])
 def signup():
@@ -55,7 +59,7 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        return redirect(url_for("about.html"))
+        return redirect(url_for("about"))
         
     else:
 
@@ -72,8 +76,9 @@ def login():
 
         if user and bcrypt.check_password_hash(user.password_hash, password):
             login_user(user)
-            return redirect(url_for("about.html"))
+            return redirect(url_for("about"))
     return render_template("login.html")
+
 
 
 @app.route("/logout")
@@ -88,7 +93,8 @@ def logout():
 @login_required
 def survey():
     pass
-    
+
+
 
 #print(gpt_response_extracter("Fuck"))
 
