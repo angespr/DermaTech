@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 80%;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container {
+    background-image: url(background2.png);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    color: black;
+    text-align: center;
+}
+
+.container h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    color:#4C8987;
+}
+
+.container p{
+    margin: 30px auto;
+    font-weight: 150;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #4C8987;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #4C8987;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: 2px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.documents {
+    margin-top: 20px;
+}
+
+.clinician-info {
+    margin-top: 20px;
+}
+
+.document-item {
+    margin-bottom: 0px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+.clinician-info{
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+
