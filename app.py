@@ -90,7 +90,7 @@ def survey():
     pass
     
 
-print(gpt_response_extracter("Fuck"))
+#print(gpt_response_extracter("Fuck"))
 
 
 
