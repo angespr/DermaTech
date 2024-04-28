@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body{
+    margin:0px;
+    background-color: #EEE8EC;
+}
+
+
+.logo {
+    /* DermaTech logo */
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 94px;
+    text-align: center;
+    margin-top: 20vh;
+    color: #000000;
+}
+
+.largeButtons a {
+    /* Rectangle 7 */
+
+    background: #4C8987;
+    border-radius: 15px;
+    width: 45vw;
+    font-size: x-large;
+    padding: 0.25em;
+    font-size: 42px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color:#000000;
+}
+
+.largeButtons .login {
+
+}
+.largeButtons .signup {
+    margin-top: 1em;
+}
+.signup:hover {
+    background: #4C8987;
+}
+.login:hover {
+    background: #4C8987;
+}
+
+img.logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 137px;
+}
+
+.welcomeText {
+    /* Welcome to */
+    
+    font-family: 'Sunflower';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    line-height: initial;
+    color: #000000;
+}
+
+.signInUpTitle .logoName {
+    /* font-family: 'Sunflower'; */
+    /* font-style: normal; */
+    /* font-weight: 500; */
+    /* font-size: 64px; */
+    /* line-height: 80px; */
+    /* text-align: center; */
+    /* color: #734128; */
+    margin-top: 0;
+    font-size:45px;
+    padding:0px;
+    line-height: initial;
+}
+
+.signUpIn {
+    
+    width:80%;
+    margin:auto;
+    margin-top: 1em;
+}
+.setUpAccountText {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+.signInUpForm {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    /* line-height: 44px; */
+    /* text-align: center; */
+    color: #D9D9D9;
+    max-width: 300px;
+    margin: auto;
+}
+
+.signInUpForm input {
+    display: block;
+    background: rgba(217, 217, 217, 0.4);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: .2em;
+    border: 1px solid #D9D9D9;
+}
+
+button.signInUpSubmit {
+
+    background: #4C8987;
+    border-radius: 15px;
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    padding:.5em 2em;
+    margin:auto;
+    margin-top:1.5em;
+    display:block;
+    color: #000000;
+}
+
+button.signInUpSubmit:hover {
+    background: #4C8987;
+}
+
+a.signInUpOtherPage {
+    display: block;
+    /* margin: auto; */
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+/* code for about page */
+.aboutText {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #D9D9D9;
+    max-width: 600px;
+}
+
+.aboutTitle .logo {
+    font-size: 40px;
+    margin-top: 21px;
+    line-height: initial;
+}
+
+.aboutText {
+    max-width: 600px;
+    font-size: 24px;
+    margin: auto;
+}
+
+.aboutText p{
+    margin: 1em 1.4em;
+}
+
+img.logo.aboutLogo {
+    width: 65px;
+}
+
+.ageBottomText {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    text-align: center;
+
+    color: #535865;
+    margin: auto;
+    width: 80vw;
+    max-width: 600px;
+    margin-top: 3em;
+}
+
+.ageQuestionText {
+    font-family: 'ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+text-align: center;
+
+
+color: #535865;
+margin: auto;
+    width: 80vw;
+    max-width: 600px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+
+/* code for feed pages */
+.feedHeader {
+    position: relative;
+}
+
+.feedHeader .logo {
+    margin: 0;
+    font-size: 50px;
+}
+
+.homeUsernameText {
+    position: absolute;
+    top: 0.4em;
+    right: 2em;
+    font-family: 'ubuntu';
+    color: #000000;
+}
+
+.displayedPost {
+    max-width: 650px;
+    margin: auto;
+    width: 80vw;
+    position: relative;
+
+}
+
+.postAuthorContainer {
+    background: #96BE8C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+img#postAuthorPfp {
+    margin: .8em;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+div#postAuthorName {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-size: 35px;
+
+    color: #000000;
+    margin-left: .5em;
+}
+
+#postImage{
+    width: 100%;
+}
+
+.extraScrollSpace{
+    height: calc(78px);
+}
+
+#postLike{
+    background: url('./images/comment.png') no-repeat;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: none;
+  }
+#postComment{
+    background:url(./images/comment.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+}
+
+ul.tags {
+    list-style-type: none;
+    display: flex;
+    max-width: 492px;
+    width: 100%;
+    justify-content: space-between;
+    flex: wra;
+    flex-wrap: wrap;
+    padding: 0px;
+    /* margin-bottom: 1em; */
+}
+
+.tags li {
+    background: #96BE8C;
+    padding: .5em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+
+a.sPostButton {
+    color: #000000f5;
+    text-decoration: none;
+    font-family: "ubuntu";
+    font-size: 100px;
+    position: absolute;
+    top: 128px;
+    /* transform: translateY(-50%); */
+    border-radius: 100%;
+    background: #978e8ebd;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    display: block;
+    /* vertical-align: top; */
+}
+
+
+a.sPostButton.rightPostButton {
+    right:0px;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .displayedPost {
+        width:100%;
+    }
+    
+}
+
+
+/* style of one post */
+
+ul.comments {
+    background: #A0c497;
+    /* padding: 2em; */
+    padding-top: 1em;
+    font-family: ubuntu;
+    padding-bottom: 1em;
+    border-radius: 1em;
+}
+
+span.comName {
+    font-size: 20px;
+    font-family: ubuntu;
+}
+
+div#postCaption {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    /* line-height: 44px; */
+    /* text-align: center; */
+    color: #535865;
+}
+
+
+
+/* style for Profile */
+
+a.homeUsernameText {
+    top: 2em;
+}
+
+
+.userProfilePostsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    /* gap: 10px; */
+}
+
+a.userProfilePosts {
+    width: 30%;
+    outline: 2px solid #4C8987;
+}
+
+img {}
+
+.userProfilePosts img {
+    width: 100%;
+    /* margin-bottom: 8px; */
+}
+
+
+
+.postAuthorContainer:hover {
+    background:#4C8987;
+}
