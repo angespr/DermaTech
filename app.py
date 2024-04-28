@@ -92,11 +92,30 @@ def logout():
 @app.route("/survey", methods=['POST', 'GET'])
 @login_required
 def survey():
-    pass
+    if request.method == 'POST':
+        symptoms = request.form['symptoms']
+        
+        duration = request.form['time']
+
+        feeling = request.form['feeling']
+
+        history = request.form['history']
+
+        #image = request.files['image']
+
+        response = gpt_response_extracter(symptoms, duration, feeling, history)
+
+        return render_template("response.html", response=response)
+
+    return render_template("questionnaire.html")
+
+
+@app.route("/mission")
+def mission():
+    return render_template("mission.html")
 
 
 
-#print(gpt_response_extracter("Fuck"))
 
 
 

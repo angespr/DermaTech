@@ -1,16 +1,16 @@
 <html>
 <head>
     <title> DermaTech Website</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="static/design.css">
 </head>
 <body>
     <div class="banner">
         <div class="navbar">
-                <img src="logo.png" class="logo">
+                <img src="static/logo.png" class="logo">
                 <ul> 
                     <li><a href="login.html">Sign In First</a></li>
-                    <li><a href="questionnaire.html">New Survey</a></li>
-                    <li><a href="about.html">Our Mission</a></li>
+                    <li><a href="{{url_for('survey')}}">New Survey</a></li>
+                    <li><a href="{{url_for('mission')}}">Our Mission</a></li>
                     <li><a href="#">Resources</a></li>
                 </ul>
         </div>

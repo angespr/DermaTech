@@ -10,13 +10,13 @@ client = OpenAI(api_key=api_key)
 #SYSTEM_PROMPT=
 
 
-def gpt_response_extracter(post_comment):
+def gpt_response_extracter(symptoms, duration, history, family_history):
+    QUESTION=f'''{symptoms} + \n {duration} \n {history} \n {family_history}'''
     try:
         completion = client.chat.completions.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": 'boo'},
-                {"role": "user", "content": post_comment}
+                {"role": "user", "content": QUESTION}
             ],
             max_tokens=150,
             temperature=0.5,

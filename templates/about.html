@@ -1,17 +1,16 @@
 <html>
     <header>
         <title> About Page </title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="static/about.css">
 </head>
 <body>
     <div class ="background">
         <div class="banner">
             <div class="navbar">
-                    <img src="logo.png" class="logo">
+                    <img src="static/logo.png" class="logo">
                     <ul> 
                         <li><a href="profile.html">Profile</a></li>
-                        <li><a href="questionnaire.html">New Survey</a></li>
-                        <li><a href="about.html">Our Mission</a></li>
+                        <li><a href="{{url_for('survey')}}">New Survey</a></li>
                         <li><a href="#">Resources</a></li>
                     </ul>
             </div>
