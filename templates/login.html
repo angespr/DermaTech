@@ -4,7 +4,6 @@
     <title>
         Login In
     </title>
-    <link rel="stylesheet" href="headerinfo.css">
     <style>
         * {
             box-sizing: border-box;
@@ -30,7 +29,7 @@
         }
 
         .registerbtn {
-            background-color: turquoise;
+            background-color: #4C8987;
             color: black;
             padding: 16px 20px;
             margin: 8px;
@@ -54,18 +53,7 @@
     </style>
 </head>
 
-<body>
-    <div class="banner">
-        <div class="navbar">
-                <img src="static/logo.png" class="logo">
-                <ul> 
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="questionnaire.html">New Survey</a></li>
-                    <li><a href="about.html">Our Mission</a></li>
-                    <li><a href="#">Resources</a></li>
-                </ul>
-        </div>
-        
+
     <div class="container">
         <form method="post" action="{{ url_for('login') }}">
             <h1>Log In</h1>
@@ -86,5 +74,4 @@
     </div>
     </div>
 </body>
-
 </html>

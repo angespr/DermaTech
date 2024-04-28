@@ -12,10 +12,11 @@
 }
 
 .banner {
-    width: 100%;
+    width: 80%;
     height: 100vh;
+    background-image: url(background2.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -27,11 +28,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo{
-    width: 150px;
-    cursor: pointer;
 }
 
 .navbar ul li{
