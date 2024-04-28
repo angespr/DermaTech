@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="static/profile.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+                <img src="static/logo.png" class="logo">
+                <ul> 
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="questionnaire.html">New Survey</a></li>
+                    <li><a href="{{url_for('about')}}">Our Mission</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+        </div>
+
+        <div class="container">
+            <h1>Welcome to Health Report, [User's Name]!</h1>
+            <div class="info">
+                <h2>Your Information</h2>
+                <p>Username: [User's Username]</p>
+            </div>
+    
+            <div class="documents">
+                <h2>Your Survey Responses</h2>
+                <div class="document-item">
+                    <p><strong>04.26.2024:</strong> Questionnaire Response Form</p>
+                </div>
+                <div class="document-item">
+                    <p><strong>04.27.2024:</strong> Questionnaire Response Form</p>
+                </div>
+            </div>
+        
+            <div class="clinician">
+                <h2>Primary Clinician Information</h2>
+                <div class="clinician-info">
+                    <p>Clinician's Name/Business Name]</p>
+                    <p>Phone Number: [Clinician's Phone Number]</p>
+                    <p>Address: [Clinician's Address]</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div>
+            <button type="button"><span></span><a href="{{url_for('logout')}}"></a>Log Out</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
