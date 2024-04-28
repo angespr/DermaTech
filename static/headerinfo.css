@@ -43,6 +43,9 @@
     transform: translateY(-50);
     text-align: center;
     color: black;
+    background-image: url(background2.png);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .container h1{
@@ -61,6 +64,7 @@
     margin: 30px auto;
     font-weight: 150;
     line-height: 25px;
+    text-align: left;
 }
 
 button{

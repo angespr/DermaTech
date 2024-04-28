@@ -11,10 +11,18 @@
     margin-right: -50px;
 }
 
-.banner {
-    width: 80%;
+.background {
+    width: 100%;
     height: 100vh;
     background-image: url(background2.png);
+    background-size: cover;
+    background-position: down;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+
     background-size: cover;
     background-position: right;
     margin-left: 50px;
