@@ -36,3 +36,22 @@
     color: black;
     text-transform: uppercase;
 }
+
+.content h1{
+    font-size: 60px;
+    margin-top: 0px;
+    color: #4C8987;
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #96b0af;
+}
+
+.content p{
+    margin-top: 5px;
+    font-weight: 150;
+    line-height: 25px;
+}
