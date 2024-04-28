@@ -6,6 +6,8 @@ from flask_login import UserMixin, LoginManager, login_user, logout_user, login_
 
 from flask_bcrypt import Bcrypt
 
+from gpt import gpt_response_extracter
+
 app = Flask(__name__)
 
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -53,7 +55,7 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        return render_template("about.html")
+        return redirect(url_for("about.html"))
         
     else:
 
@@ -70,8 +72,25 @@ def login():
 
         if user and bcrypt.check_password_hash(user.password_hash, password):
             login_user(user)
-            return render_template("about.html")
+            return redirect(url_for("about.html"))
     return render_template("login.html")
+
+
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
+
+
+
+@app.route("/survey", methods=['POST', 'GET'])
+@login_required
+def survey():
+    pass
+    
+
+print(gpt_response_extracter("Fuck"))
 
 
 
