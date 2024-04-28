@@ -53,20 +53,20 @@
     </style>
 </head>
 
-<body>        
+
     <div class="container">
-        <form>
+        <form method="post" action="{{ url_for('login') }}">
             <h1>Log In</h1>
             <h2>Please log in </h2>
             <hr />
             <label>Username</label>
-            <input type="username" placeholder="Username" />
+            <input type="username" name="username" required placeholder="Username" />
             <br />
             <label>Password</label>
-            <input type="password" placeholder="Password" />
+            <input type="password" name="password" required placeholder="Password" />
             <br />
 
-            <button class="registerbtn">Log In</button>
+            <button class="registerbtn" type="submit">Log In</button>
 
             <div class="login">
                 <p>Don't have account?<a href="#">Sign up</a></p>

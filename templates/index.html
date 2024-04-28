@@ -21,8 +21,8 @@
             <p>To access our services, create an account with us! Already have one? Click the login button!
             </p>
             <div>
-                <button type="button"><span></span><a href="signup.html"></a>SIGN-UP</button>
-                <button type="button"><span></span><a href="login.html"></a>LOGIN</button>
+                <a href="{{ url_for('signup') }}"><button type="button">SIGN-UP</button></a>
+                <a href="{{ url_for('login') }}"><button type="button">LOGIN</button></a>
             </div>
         </div>
     </div>
